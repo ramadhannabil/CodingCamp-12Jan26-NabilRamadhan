@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src='https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=620&dpr=2&s=none&crop=none'
+            alt ="profile image" >
+            <h2></h2> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hello <span id="userName">guest</span>, Welcome To My Website</h1>
+    <p>This is my first website.</p>
+    <p id="currentTime"></p>
+
+</section>
+
+<section class="headquarter">
+    <h2>I'am learning</h2>
+    <div class="hq-list">
+        <div class="hq">JavaScript</div>
+        <div class="hq">Html</div>
+        <div class="hq">CSS</div>
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h2>My Portfolio</h2>
+
+    <div class="portfolio-list">
+        <div class="portfolio-card">
+            <h3>My First Website</h3>
+            <p>This is my first website built using HTML,CSS,and JavaScript.</p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Web Application Practice</h3>
+            <p>Several small projects that I created as practice in web development.</p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Learning UI/UX</h3>
+            <p>I am currently learning UI/UX design to create more attractive interfaces.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <!-- FORM -->
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Full Name">
+
+            <input type="date" id="birth">
+
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="Male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Famale"> Famale
+                </label>
+            </div>
+
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- HASIL (KANAN BAWAH DI GAMBAR) -->
+        <div class="result-box">
+            <h3>Result</h3>
+            <p><strong>Current Time:</strong> <span id="timeResult">-</span></p>
+            <p><strong>Name:</strong> <span id="nameResult">-</span></p>
+            <p><strong>Date Birth:</strong> <span id="birthResult">-</span></p>
+            <p><strong>Gender:</strong> <span id="genderResult">-</span></p>
+            <p><strong>Message:</strong> <span id="messageResult">-</span></p>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <div class="result" id="result"></div>
+</section>
+
+<footer>
+    <p>© 2026 MyWebsite</p>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

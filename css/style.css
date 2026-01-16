@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.portfolio {
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.portfolio-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: px 30px;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 6px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  border: white 1px solid;
+  padding: 3.5px 7px;
+  cursor: pointer;
+}
+.nav-links a:hover {
+  background: white;
+  color: #222;
+  transition-duration: 500ms;
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.headquarter {
+  padding: 40px;
+  text-align: center;
+}
+
+.hq-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hq {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact button {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  color: white;
+  border: none;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.banner {
+  background: #333;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.about,
+.vision-mission {
+  padding: 40px;
+}
+
+.vision-mission {
+  display: flex;
+  gap: 20px;
+}
+
+.gender {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.result-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 40%;
+  background: #f9f9f9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hq-list,
+  .vision-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .result-box {
+    width: 100%;
+  }
+
+  .portfolio-list {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
